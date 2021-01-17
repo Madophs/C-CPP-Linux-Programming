@@ -1,0 +1,4 @@
+set(CMAKE_C_STANDARD 11 PRIVATE)
+set(CMAKE_C_STANDARD_REQUIRED TRUE PRIVATE)
+
+add_executable(reboot reboot.c)
