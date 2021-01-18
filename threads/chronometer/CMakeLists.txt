@@ -1,5 +1,5 @@
-set(CMAKE_CXX_STANDARD 14 PRIVATE)
-set(CMAKE_CXX_STANDARD_REQUIRED True PRIVATE)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 add_executable(chronometer chronometer.cpp)
 
