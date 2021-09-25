@@ -6,4 +6,4 @@ link_directories(${CMAKE_SOURCE_DIR}/lpi_common)
 
 add_executable(cp cp.c)
 
-target_link_libraries(cp PRIVATE liblpicommon)
+target_link_libraries(cp PRIVATE lpicommon)

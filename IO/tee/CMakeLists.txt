@@ -6,4 +6,4 @@ link_directories(${CMAKE_SOURCE_DIR}/lpi_common)
 
 add_executable(tee tee.c)
 
-target_link_libraries(tee PRIVATE liblpicommon)
+target_link_libraries(tee PRIVATE lpicommon)
