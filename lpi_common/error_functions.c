@@ -38,13 +38,13 @@ static void outputError(Boolean useErr, int err, Boolean flushStdout,
     }
     else
     {
-    snprintf(errMsg, MSG_SIZE, ":");
+        snprintf(errMsg, MSG_SIZE, ":");
     }
 
     snprintf(buf, BUF_SIZE, "ERROR: %s %s\n", errMsg, userMsg);
 
     if (flushStdout)
-    fflush(stdout); // Any pending stdout
+        fflush(stdout); // Any pending stdout
 
     fputs(buf, stdout);
     fflush(stdout); // Just in case

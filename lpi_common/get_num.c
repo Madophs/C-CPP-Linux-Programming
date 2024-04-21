@@ -37,7 +37,7 @@ static long getNum(const char *fname, const char *arg, int flags, const char *na
 
     if (errno != 0)
         gnFail(fname, "strtol function failed", arg, name);
-    if (*endptr != '\n')
+    if (*endptr != '\0')
         gnFail(fname, "non numeric characters", arg, name);
 
     if ((flags & GN_NONNEG) && res < 0)

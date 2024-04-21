@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     sourceFd = open(sourceFile, O_RDONLY);
     if (sourceFd == -1)
-        errExit("opening file %s.", sourceFile);
+        errExit("opening file: %s", sourceFile);
 
     openFlags = O_CREAT | O_TRUNC | O_RDWR;
     filePerms = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH; // rw-rw-rw
